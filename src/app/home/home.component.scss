@@ -1,0 +1,19 @@
+button{
+    font-weight: bold;
+    background: lightgrey;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0;
+}
+
+.play-container{
+    padding: 3em;
+    border: 1px solid lightgrey;
+    margin: 1em;
+
+    input{
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
