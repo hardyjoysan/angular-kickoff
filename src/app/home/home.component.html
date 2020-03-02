@@ -4,6 +4,16 @@
     <p>You've clicked <button (click)="countClick()">This Button</button> {{clickCounter}} times.</p>
 </div>
 
+<div class="play-container" [style.background-color]="clickCounter > 4 ? '#ffffc7': '#eaeaea'">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+        <p>The click counter <strong>IS GREATER</strong> than 4.</p>
+    </ng-template>
+
+    <ng-template #none>
+        <p>The click counter <strong>IS NOT GREATER</strong> than 4.</p>
+    </ng-template>
+</div>
+
 <div class="play-container">
     <p>
         <input type="text" [(ngModel)]="name">
