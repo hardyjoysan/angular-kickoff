@@ -4,7 +4,7 @@
     <p>You've clicked <button (click)="countClick()">This Button</button> {{clickCounter}} times.</p>
 </div>
 
-<div class="play-container" [class.active]="clickCounter > 4" [ngStyle]="{
+<div class="play-container" [ngClass]="setClasses()" [ngStyle]="{
         'background-color': clickCounter > 4 ? '#ffffc7': '#eaeaea',
         'border': clickCounter > 4 ? '2px solid #666': 'none'
     }">
